@@ -1,9 +1,7 @@
-#include <stdio.h>
+#include <stdio.h
 /**
  * main - Entry point
- * Description:' A program to print definition of programming'
- * main - empty
- * Return : Always 0 (Success)
+ * Return: always 0 (Success)
  */
 int main(void)
 {
