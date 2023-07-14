@@ -7,14 +7,19 @@
  */
 int main(void)
 {
-	char lowercase;
+	char lowercase = 'a';
 
-	do {
-		for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+	while (lowercase <= 'z')
+	{
+		if (lowercase != 'q' && lowercase != 'e')
 		{
 			putchar(lowercase);
 		}
-	} while (lowercase != 'q' || lowercase != 'e');
+
+		lowercase++;
+	}
+
+	putchar('\n');
 
 	return (0);
 }
