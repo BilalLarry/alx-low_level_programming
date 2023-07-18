@@ -6,25 +6,27 @@
  */
 void jack_bauer(void)
 {
-	int hour, minute;
+	int a, b, c, d;
 
-	for (hour = 0; hour < 24; hour++)
+	for (a=0; a<= 2; a++)
 	{
-		for (minute = 0; minute < 60; minute++)
-		{
-			printf("%02d:%02d\n", hour, minute);
-		}
+	for (b = 0; b <= 9; b++)
+	{
+	if ((a <= 1 && b <= 9) ||(a <= 2 && b <= 3))
+	{
+	for (c = 0; c <= 5; c++)
+	{
+	for (d =0; d <= 9; d++)
+	{
+	_putchar(a + '0');
+	_putchar(b + '0');
+	_putchar(58);
+	_putchar(c + '0');
+	_putchar(d + '0');
+	_putchar('\n');
+	}
+	}
+	}
+	}
 	}
 }
-
-/**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
-
