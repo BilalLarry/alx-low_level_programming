@@ -9,26 +9,9 @@
  */
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return 1;
-	else
-		return 0;
-}
-
-/**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+if ((c >= 65 && c <= 97) || (c >= 97 && c <= 122))
 {
-	char ch = 'H';
-
-	if (_isalpha(ch))
-		printf("%c is an alphabetic letter.\n", ch);
-	else
-		printf("%c is not an alphabetic letter.\n", ch);
-
-	return 0;
+return 1;
 }
-
+return 0;
+}
