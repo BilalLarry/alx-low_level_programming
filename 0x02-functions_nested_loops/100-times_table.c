@@ -25,23 +25,3 @@ void print_times_table(int n)
 		}
 	}
 }
-
-/**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int num = 9;
-
-	printf("Times table up to %d:\n", num);
-	print_times_table(num);
-
-	num = 20;
-	printf("Times table up to %d:\n", num);
-	print_times_table(num);
-
-	return (0);
-}
-
