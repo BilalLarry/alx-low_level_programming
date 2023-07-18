@@ -22,23 +22,3 @@ void print_to_98(int n)
 
 	printf("98\n");
 }
-
-/**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int num = 50;
-
-	printf("Numbers from %d to 98:\n", num);
-	print_to_98(num);
-
-	num = 102;
-	printf("Numbers from %d to 98:\n", num);
-	print_to_98(num);
-
-	return (0);
-}
-
