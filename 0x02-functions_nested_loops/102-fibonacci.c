@@ -7,21 +7,21 @@
  */
 int main(void)
 {
-	int first = 1, second = 2, temp;
-	int count, max_count = 50;
+    long long int first = 1, second = 2, temp;
+    int count, max_count = 50;
 
-	printf("%d, %d", first, second);
+    printf("%lld, %lld", first, second);
 
-	for (count = 2; count < max_count; count++)
-	{
-		temp = first + second;
-		printf(", %d", temp);
+    for (count = 2; count < max_count; count++)
+    {
+        temp = first + second;
+        printf(", %lld", temp);
 
-		first = second;
-		second = temp;
-	}
+        first = second;
+        second = temp;
+    }
 
-	printf("\n");
-	return (0);
+    printf("\n");
+    return (0);
 }
 
