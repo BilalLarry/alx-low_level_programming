@@ -7,21 +7,21 @@
  */
 int main(void)
 {
-int i = 0;
-long  = 1, k = 2;
-while (i < 50)
-{
-if ( i == 0)
-printf("%ld" , );
-else if (i == 1)
-printf(", %ld" , k);
-else
-{
-k += j;
-j = k - j;
-printf(", %ld", k);
+    unsigned long first = 1, second = 2, temp;
+    int count, max_count = 50;
+
+    printf("%lu, %lu", first, second);
+
+    for (count = 2; count < max_count; count++)
+    {
+        temp = first + second;
+        printf(", %lu", temp);
+
+        first = second;
+        second = temp;
+    }
+
+    printf("\n");
+    return (0);
 }
-i++;
-}
-printf("\n");
-return (0);
+
