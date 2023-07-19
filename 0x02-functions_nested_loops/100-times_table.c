@@ -1,27 +1,39 @@
-#include <stdio.h>
+#include "main.h"
 
-/**
- * print_times_table - Prints the n times table, starting with 0.
- *
- * @n: The number representing the highest multiplier (up to 15).
- */
+void print_times_table(int n);
+
+int main(void)
+{
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    if (n >= 0 && n <= 15)
+    {
+        print_times_table(n);
+    }
+    else
+    {
+        printf("n should be between 0 and 15 (inclusive).\n");
+    }
+
+    return (0);
+}
+
 void print_times_table(int n)
 {
-	int row, col, result;
+    if (n < 0 || n > 15)
+    {
+        return;
+    }
 
-	if (n >= 0 && n <= 15)
-	{
-		for (row = 0; row <= n; row++)
-		{
-			for (col = 0; col <= n; col++)
-			{
-				result = row * col;
-				if (col == 0)
-					printf("%2d", result);
-				else
-					printf(", %3d", result);
-			}
-			printf("\n");
-		}
-	}
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= n; j++)
+        {
+            printf("%-5d ", i * j);
+        }
+        printf("\n");
+    }
 }
+
