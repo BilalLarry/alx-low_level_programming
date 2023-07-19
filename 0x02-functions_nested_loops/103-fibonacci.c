@@ -1,7 +1,10 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: Always 0.
+ * fibonacci_sum_even - Calculates the sum of even-valued Fibonacci
+ * @limit: The maximum value for Fibonacci terms.
+ * main - Entry point of the program.
+ *
+ * Return: The sum of even-valued Fibonacci terms.
  */
 int fibonacci_sum_even(int limit)
 {
@@ -16,7 +19,7 @@ temp = a;
 a = b;
 b += temp;
 }
-return sum_even;
+return (sum_even);
 }
 int main(void)
 {
