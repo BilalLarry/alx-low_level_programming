@@ -1,45 +1,30 @@
 #include <stdio.h>
 
 /**
- * fibonacci_sum_even - Calculates the sum of even-valued Fibonacci terms not exceeding the given limit.
- * @limit: The maximum value for Fibonacci terms.
+ * print_times_table - Prints the n times table, starting with 0
+ * @n: The number to generate the times table
  *
- * Return: The sum of even-valued Fibonacci terms.
+ * Return: void
  */
-int fibonacci_sum_even(int limit)
+void print_times_table(int n)
 {
-	int a = 1, b = 2, temp, sum_even = 0;
+    int row, column;
 
-	while (a <= limit)
-	{
-		/* Check if the current Fibonacci term 'a' is even */
-		if (a % 2 == 0)
-		{
-			/* If 'a' is even, add it to the sum_even variable */
-			sum_even += a;
-		}
-		/* Calculate the next Fibonacci term and update variables 'a' and 'b' */
-		temp = a;
-		a = b;
-		b += temp;
-	}
+    if (n < 0 || n > 15)
+        return;
 
-	return sum_even;
-}
+    for (row = 0; row <= n; row++)
+    {
+        for (column = 0; column <= n; column++)
+        {
+            int result = row * column;
 
-/**
- * main - Entry point of the program.
- *
- * Return: Always 0 (Success).
- */
-int main(void)
-{
-	int limit = 4000000;
-	int result = fibonacci_sum_even(limit);
+            if (column != 0)
+                printf(", ");
 
-	/* Print the result, which is the sum of even-valued Fibonacci terms */
-	printf("%d\n", result);
-
-	return 0;
+            printf("%d", result);
+        }
+        printf("\n");
+    }
 }
 
