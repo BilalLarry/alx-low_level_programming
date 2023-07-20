@@ -3,7 +3,7 @@
 /**
  * print_triangle - entry point
  * Description: i prints diagonal
- * @size of the triangle
+ * @size: size of the triangle
  * Return: void
  */
 
@@ -11,7 +11,7 @@ void print_triangle(int size)
 {
 int row, hashes, spaces;
 
-if (size <=0)
+if (size <= 0)
 {
 _putchar('\n');
 }
