@@ -5,7 +5,7 @@
  */
 void _puts(char *str)
 {
-wile (*str != '\0')
+while (*str != '\0')
 {
 _putchar(*str++);
 }
