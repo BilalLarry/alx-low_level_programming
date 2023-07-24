@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts2 - function should print only one character
  * starting with first
@@ -20,7 +21,7 @@ longi++;
 t = longi - 1;
 for (o = 0; o <= t; o++)
 {
-if (0 % 2 == 0)
+if (o % 2 == 0)
 {
 putchar(str[o]);
 }
