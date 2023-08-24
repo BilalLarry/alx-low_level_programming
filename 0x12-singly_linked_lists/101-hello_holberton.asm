@@ -6,7 +6,7 @@ format db "Hello, Holberton" , 10, 0
 
 section .text
 main:
-lea rdi, [rel format]
+mov   edi, format
 xor eax, eax
 call printf
 ret
