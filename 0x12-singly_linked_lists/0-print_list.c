@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "lists.h"
-/*
- * print_list - Prints elements of list
+/**
+ * print_list - Prints elements of a linked list
+ * print_list: Prints elements of a linked list
  * @h: points to list_t
  * Return: the number of nodes
  */
@@ -18,5 +19,5 @@ printf("[%u] %s\n", h->len, h->str);
 h = h->next;
 ++b;
 }
-return b;
+return (b);
 }
