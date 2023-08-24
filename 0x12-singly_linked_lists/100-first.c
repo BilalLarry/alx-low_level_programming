@@ -1,7 +1,7 @@
 #include <stdio.h>
 void m(void) __attribute__ ((constructor));
 /**
- * main - prints a sentence
+ * m - prints a sentence
  */
 void m(void)
 {
