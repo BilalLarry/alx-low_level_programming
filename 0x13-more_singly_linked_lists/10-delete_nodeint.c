@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - deletes a node in a linked list 
- * @head: point to the first element 
+ * delete_nodeint_at_index - deletes a node in a linked list
+ * @head: point to the first element
  * @index: index of the node
  *
  * Return: 1 (Success), or -1 (Fail)
